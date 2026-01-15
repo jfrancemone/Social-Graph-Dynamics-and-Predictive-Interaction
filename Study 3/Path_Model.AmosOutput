@@ -1,0 +1,4110 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title>Path_Model.amw</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\cjfra\AppData\Local\Amos 21.0\AmosOutput.css" />
+  </head>
+  <body>
+    <div nodecaption="Path_Model.amw" datetime1="2026-1-15-18-25-31-399" datetime2="2026-1-15-18-25-31-399" datetime3="2026-1-15-18-25-31-399" dataset="data set name" filename="file name" appname="C:\Users\cjfra\Desktop\GitHub Files\Data-Science-Portfolio\Social-Graph-Dynamics-and-Predictive-Interaction\Study 3\Path_Model.amw" caption="C:\Users\cjfra\Desktop\GitHub Files\Data-Science-Portfolio\Social-Graph-Dynamics-and-Predictive-Interaction\Study 3\Path_Model.amw" helpfile="AmosReference" date="Thursday, January 15, 2026" time="1:27:05 PM" ntype="top" version="8" language="English" samplenumber="3.14" decimals="3">
+      <h4>C:\Users\cjfra\Desktop\GitHub Files\Data-Science-Portfolio\Social-Graph-Dynamics-and-Predictive-Interaction\Study 3\Path_Model.amw</h4>
+      <div ntype="globalsummary" nodecaption="Analysis Summary" caption="Analysis Summary">
+        <div>
+          <h5>Analysis Summary</h5>
+        </div>
+        <div nodecaption="Date and Time" caption="Date and Time">
+          <div>
+            <h5>Date and Time</h5>
+          </div>
+          <div>Date: Thursday, January 15, 2026</div>
+          <div>Time: 1:27:05 PM</div>
+        </div>
+        <div nodecaption="Title" caption="Title">
+          <div>
+            <h5 h="348">Title</h5>
+          </div>
+          <div>Path_model: Thursday, January 15, 2026   1:27 PM</div>
+        </div>
+      </div>
+      <div ntype="groups" nodecaption="Groups" caption="Groups">
+        <div>
+          <h5>Groups</h5>
+        </div>
+        <div ntype="group" nodecaption="Group number 1" caption="Group number 1">
+          <div>
+            <h5>Group number 1 (Group number 1)</h5>
+          </div>
+          <div ntype="groupnotes" nodecaption="Notes for Group" caption="Notes for Group">
+            <div>
+              <h5 h="860">Notes for Group (Group number 1)</h5>
+            </div>
+            <div h="610">The model is recursive.</div>
+            <div>Sample size = 212</div>
+          </div>
+          <div ntype="variablesummary" nodecaption="Variable Summary" caption="Variable Summary">
+            <div>
+              <h5>Variable Summary (Group number 1)</h5>
+            </div>
+            <div nodecaption="Variable list" caption="Your model contains the following variables">
+              <div>
+                <h5 h="763">Your model contains the following variables (Group number 1)</h5>
+              </div>
+              <div style="margin-top: 10pt">Observed, endogenous variables</div>
+              <div vname="DISPO_A" style="margin-top: 10pt; margin-left: .5in">DISPO_A</div>
+              <div vname="DISPO_B" style="margin-left: .5in">DISPO_B</div>
+              <div vname="DISPO_C" style="margin-left: .5in">DISPO_C</div>
+              <div style="margin-top: 10pt">Observed, exogenous variables</div>
+              <div vname="A_Bad_Good" style="margin-top: 10pt; margin-left: .5in">A_Bad_Good</div>
+              <div style="margin-top: 10pt">Unobserved, exogenous variables</div>
+              <div vname="e1" style="margin-top: 10pt; margin-left: .5in">e1</div>
+              <div vname="e2" style="margin-left: .5in">e2</div>
+              <div vname="e3" style="margin-left: .5in">e3</div>
+            </div>
+            <div nodecaption="Variable counts">
+              <h5>Variable counts (Group number 1)</h5>
+              <table class="PLAINTABLE">
+                <colgroup>
+                  <col />
+                  <col />
+                </colgroup>
+                <tbody>
+                  <tr align="right" RowID="">
+                    <td align="left">Number of variables in your model:</td>
+                    <td>7</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td align="left">Number of observed variables:</td>
+                    <td>4</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td align="left">Number of unobserved variables:</td>
+                    <td>3</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td align="left">Number of exogenous variables:</td>
+                    <td>4</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td align="left">Number of endogenous variables:</td>
+                    <td>3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div nodecaption="Parameter Summary" ntype="parametersummary">
+            <h5 h="753">Parameter Summary (Group number 1)</h5>
+            <table>
+              <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <thead>
+                <tr align="right" RowID="">
+                  <td class="B1" />
+                  <td class="B2">Weights</td>
+                  <td class="B2">Covariances</td>
+                  <td class="B2">Variances</td>
+                  <td class="B2">Means</td>
+                  <td class="B2">Intercepts</td>
+                  <td class="B2">Total</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr align="right" RowID="">
+                  <td class="B3">Fixed</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>3</td>
+                </tr>
+                <tr align="right" RowID="">
+                  <td class="B3">Labeled</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr align="right" RowID="">
+                  <td class="B3">Unlabeled</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>7</td>
+                </tr>
+                <tr align="right" RowID="">
+                  <td class="B3">Total</td>
+                  <td>6</td>
+                  <td>0</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div ntype="models" nodecaption="Models" caption="Models">
+        <div>
+          <h5>Models</h5>
+        </div>
+        <div ntype="model" nodecaption="Default model" caption="Default model">
+          <div>
+            <h5>Default model (Default model)</h5>
+          </div>
+          <div ntype="modelnotes" nodecaption="Notes for Model" caption="Notes for Model">
+            <div>
+              <h5 h="879">Notes for Model (Default model)</h5>
+            </div>
+            <div nodecaption="Computation of degrees of freedom">
+              <h5 h="690">Computation of degrees of freedom (Default model)</h5>
+              <table class="PLAINTABLE">
+                <colgroup>
+                  <col />
+                  <col />
+                </colgroup>
+                <tbody>
+                  <tr align="right" RowID="">
+                    <td>Number of distinct sample moments:</td>
+                    <td>10</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>Number of distinct parameters to be estimated:</td>
+                    <td>7</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>Degrees of freedom (10 - 7):</td>
+                    <td>3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div ntype="result" nodecaption="Result" caption="Result">
+              <div>
+                <h5>Result (Default model)</h5>
+              </div>
+              <div h="818">Minimum was achieved</div>
+              <div> <span>Chi-square = <span h="-1" x="1.08209302062448">1.082</span></span></div>
+              <div>Degrees of freedom = 3</div>
+              <div h="798"> <span h="-1">Probability level = <span h="-1" x="0.781398563291169">.781</span></span></div>
+            </div>
+          </div>
+          <div ntype="group" nodecaption="Group number 1" caption="Group number 1">
+            <div>
+              <h5>Group number 1 (Group number 1 -  Default model)</h5>
+            </div>
+            <div ntype="estimates" nodecaption="Estimates" caption="Estimates">
+              <div>
+                <h5>Estimates (Group number 1 -  Default model)</h5>
+              </div>
+              <div ntype="scalars" nodecaption="Scalars" caption="Scalar Estimates">
+                <div>
+                  <h5>Scalar Estimates (Group number 1 -  Default model)</h5>
+                </div>
+                <h5 h="806">Maximum Likelihood Estimates</h5>
+                <div nodecaption="Regression Weights:">
+                  <h5 h="569">Regression Weights: (Group number 1 -  Default model)</h5>
+                  <table>
+                    <colgroup>
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr align="right" RowID="">
+                        <td class="B2" />
+                        <td class="B2" />
+                        <td class="B1" />
+                        <td class="B2" colhelp="9000">Estimate</td>
+                        <td class="B2" colhelp="9001">S.E.</td>
+                        <td class="B2" colhelp="9002">C.R.</td>
+                        <td class="B2" colhelp="9003">P</td>
+                        <td align="left" class="B2">Label</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_B" class="nopad">DISPO_B</td>
+                        <td align="left" class="nopad" nowrap="">&lt;---</td>
+                        <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                        <td nowrap="" x="-0.819711570674098">-.820</td>
+                        <td x="0.158210954419106">.158</td>
+                        <td nowrap="" x="-5.18113030594997">-5.181</td>
+                        <td>***</td>
+                        <td align="left">par_2</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_A" class="nopad">DISPO_A</td>
+                        <td align="left" class="nopad" nowrap="">&lt;---</td>
+                        <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                        <td x="2.44698274246259">2.447</td>
+                        <td x="0.166622548746919">.167</td>
+                        <td x="14.6857838921867">14.686</td>
+                        <td>***</td>
+                        <td align="left">par_1</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_C" class="nopad">DISPO_C</td>
+                        <td align="left" class="nopad" nowrap="">&lt;---</td>
+                        <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                        <td x="0.539167374484607">.539</td>
+                        <td x="0.0454057524104979">.045</td>
+                        <td x="11.8744288082748">11.874</td>
+                        <td>***</td>
+                        <td align="left">par_3</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div nodecaption="Standardized Regression Weights:">
+                  <h5 h="813">Standardized Regression Weights: (Group number 1 -  Default model)</h5>
+                  <table>
+                    <colgroup>
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr align="right" RowID="">
+                        <td class="B2" />
+                        <td class="B2" />
+                        <td class="B1" />
+                        <td class="B2" colhelp="9010">Estimate</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_B" class="nopad">DISPO_B</td>
+                        <td align="left" class="nopad" nowrap="">&lt;---</td>
+                        <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                        <td nowrap="" x="-0.335952837348664">-.336</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_A" class="nopad">DISPO_A</td>
+                        <td align="left" class="nopad" nowrap="">&lt;---</td>
+                        <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                        <td x="0.710967804906993">.711</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_C" class="nopad">DISPO_C</td>
+                        <td align="left" class="nopad" nowrap="">&lt;---</td>
+                        <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                        <td x="0.632907330518046">.633</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div nodecaption="Variances:">
+                  <h5 h="575">Variances: (Group number 1 -  Default model)</h5>
+                  <table>
+                    <colgroup>
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr align="right" RowID="">
+                        <td class="B2" />
+                        <td class="B2" />
+                        <td class="B1" />
+                        <td class="B2" colhelp="9060">Estimate</td>
+                        <td class="B2" colhelp="9061">S.E.</td>
+                        <td class="B2" colhelp="9062">C.R.</td>
+                        <td class="B2" colhelp="9063">P</td>
+                        <td align="left" class="B2">Label</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="A_Bad_Good" class="nopad">A_Bad_Good</td>
+                        <td />
+                        <td class="B3" />
+                        <td x="0.249911000355999">.250</td>
+                        <td x="0.0243309543057948">.024</td>
+                        <td x="10.2713192920871">10.271</td>
+                        <td>***</td>
+                        <td align="left">par_4</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="e2" class="nopad">e2</td>
+                        <td />
+                        <td class="B3" />
+                        <td x="1.31989969693066">1.320</td>
+                        <td x="0.128503423892927">.129</td>
+                        <td x="10.2713192920871">10.271</td>
+                        <td>***</td>
+                        <td align="left">par_5</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="e1" class="nopad">e1</td>
+                        <td />
+                        <td class="B3" />
+                        <td x="1.46398077968448">1.464</td>
+                        <td x="0.142530938631449">.143</td>
+                        <td x="10.2713192920871">10.271</td>
+                        <td>***</td>
+                        <td align="left">par_6</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="e3" class="nopad">e3</td>
+                        <td />
+                        <td class="B3" />
+                        <td x="0.647224704299992">.647</td>
+                        <td x="0.0630128112947095">.063</td>
+                        <td x="10.2713192920871">10.271</td>
+                        <td>***</td>
+                        <td align="left">par_7</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div nodecaption="Squared Multiple Correlations:">
+                  <h5 h="576">Squared Multiple Correlations: (Group number 1 -  Default model)</h5>
+                  <table>
+                    <colgroup>
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr align="right" RowID="">
+                        <td class="B2" />
+                        <td class="B2" />
+                        <td class="B1" />
+                        <td class="B2" colhelp="9070">Estimate</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_B" class="nopad">DISPO_B</td>
+                        <td />
+                        <td class="B3" />
+                        <td x="0.112864308922618">.113</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_C" class="nopad">DISPO_C</td>
+                        <td />
+                        <td class="B3" />
+                        <td x="0.400571689023479">.401</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_A" class="nopad">DISPO_A</td>
+                        <td />
+                        <td class="B3" />
+                        <td x="0.505475219614268">.505</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div ntype="matrices" nodecaption="Matrices" caption="Matrices">
+                <div>
+                  <h5>Matrices (Group number 1 -  Default model)</h5>
+                </div>
+                <div nodecaption="Total Effects" ntype="ppml">
+                  <h5 h="7500">Total Effects (Group number 1 -  Default model)</h5>
+                  <table inasentence="7500">
+                    <colgroup>
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr align="right" RowID="">
+                        <td class="B1" />
+                        <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                        <td vname="DISPO_B" class="B2">DISPO_B</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                        <td nowrap="" x="-0.819711570674098">-.820</td>
+                        <td x="0">.000</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                        <td nowrap="" x="-0.441961735395007">-.442</td>
+                        <td x="0.539167374484607">.539</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                        <td x="2.44698274246259">2.447</td>
+                        <td x="0">.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div nodecaption="Standardized Total Effects" ntype="ppml">
+                  <h5 h="7510">Standardized Total Effects (Group number 1 -  Default model)</h5>
+                  <table inasentence="7510">
+                    <colgroup>
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr align="right" RowID="">
+                        <td class="B1" />
+                        <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                        <td vname="DISPO_B" class="B2">DISPO_B</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                        <td nowrap="" x="-0.335952837348664">-.336</td>
+                        <td x="0">.000</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                        <td nowrap="" x="-0.212627013466306">-.213</td>
+                        <td x="0.632907330518046">.633</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                        <td x="0.710967804906993">.711</td>
+                        <td x="0">.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div nodecaption="Direct Effects" ntype="ppml">
+                  <h5 h="7340">Direct Effects (Group number 1 -  Default model)</h5>
+                  <table inasentence="7340">
+                    <colgroup>
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr align="right" RowID="">
+                        <td class="B1" />
+                        <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                        <td vname="DISPO_B" class="B2">DISPO_B</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                        <td nowrap="" x="-0.819711570674098">-.820</td>
+                        <td x="0">.000</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                        <td x="0">.000</td>
+                        <td x="0.539167374484607">.539</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                        <td x="2.44698274246259">2.447</td>
+                        <td x="0">.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div nodecaption="Standardized Direct Effects" ntype="ppml">
+                  <h5 h="7350">Standardized Direct Effects (Group number 1 -  Default model)</h5>
+                  <table inasentence="7350">
+                    <colgroup>
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr align="right" RowID="">
+                        <td class="B1" />
+                        <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                        <td vname="DISPO_B" class="B2">DISPO_B</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                        <td nowrap="" x="-0.335952837348664">-.336</td>
+                        <td x="0">.000</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                        <td x="0">.000</td>
+                        <td x="0.632907330518046">.633</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                        <td x="0.710967804906993">.711</td>
+                        <td x="0">.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div nodecaption="Indirect Effects" ntype="ppml">
+                  <h5 h="7400">Indirect Effects (Group number 1 -  Default model)</h5>
+                  <table inasentence="7400">
+                    <colgroup>
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr align="right" RowID="">
+                        <td class="B1" />
+                        <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                        <td vname="DISPO_B" class="B2">DISPO_B</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                        <td x="0">.000</td>
+                        <td x="0">.000</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                        <td nowrap="" x="-0.441961735395007">-.442</td>
+                        <td x="0">.000</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                        <td x="0">.000</td>
+                        <td x="0">.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div nodecaption="Standardized Indirect Effects" ntype="ppml">
+                  <h5 h="7410">Standardized Indirect Effects (Group number 1 -  Default model)</h5>
+                  <table inasentence="7410">
+                    <colgroup>
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr align="right" RowID="">
+                        <td class="B1" />
+                        <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                        <td vname="DISPO_B" class="B2">DISPO_B</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                        <td x="0">.000</td>
+                        <td x="0">.000</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                        <td nowrap="" x="-0.212627013466306">-.213</td>
+                        <td x="0">.000</td>
+                      </tr>
+                      <tr align="right" RowID="">
+                        <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                        <td x="0">.000</td>
+                        <td x="0">.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div nodecaption="Modification Indices" caption="Modification Indices">
+              <div>
+                <h5 h="815">Modification Indices (Group number 1 -  Default model)</h5>
+              </div>
+              <div nodecaption="Covariances:">
+                <h5>Covariances: (Group number 1 -  Default model)</h5>
+                <table>
+                  <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                  </colgroup>
+                  <thead>
+                    <tr align="right" RowID="">
+                      <td class="B2" />
+                      <td class="B2" />
+                      <td class="B1" />
+                      <td class="B2" colhelp="9086">M.I.</td>
+                      <td class="B2" colhelp="9087">Par Change</td>
+                    </tr>
+                  </thead>
+                  <tbody />
+                </table>
+              </div>
+              <div nodecaption="Variances:">
+                <h5>Variances: (Group number 1 -  Default model)</h5>
+                <table>
+                  <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                  </colgroup>
+                  <thead>
+                    <tr align="right" RowID="">
+                      <td class="B2" />
+                      <td class="B2" />
+                      <td class="B1" />
+                      <td class="B2" colhelp="9088">M.I.</td>
+                      <td class="B2" colhelp="9089">Par Change</td>
+                    </tr>
+                  </thead>
+                  <tbody />
+                </table>
+              </div>
+              <div nodecaption="Regression Weights:">
+                <h5>Regression Weights: (Group number 1 -  Default model)</h5>
+                <table>
+                  <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                  </colgroup>
+                  <thead>
+                    <tr align="right" RowID="">
+                      <td class="B2" />
+                      <td class="B2" />
+                      <td class="B1" />
+                      <td class="B2" colhelp="9080">M.I.</td>
+                      <td class="B2" colhelp="9081">Par Change</td>
+                    </tr>
+                  </thead>
+                  <tbody />
+                </table>
+              </div>
+            </div>
+            <div ntype="bootstrap" nodecaption="Bootstrap" caption="Bootstrap">
+              <div>
+                <h5>Bootstrap (Group number 1 -  Default model)</h5>
+              </div>
+              <div ntype="bootstrapstandarderrors" nodecaption="Bootstrap standard errors" caption="Bootstrap standard errors">
+                <div>
+                  <h5>Bootstrap standard errors (Group number 1 -  Default model)</h5>
+                </div>
+                <div ntype="scalars" nodecaption="Scalars" caption="Scalar Estimates">
+                  <div>
+                    <h5>Scalar Estimates (Group number 1 -  Default model)</h5>
+                  </div>
+                  <div nodecaption="Regression Weights:">
+                    <h5 h="569">Regression Weights: (Group number 1 -  Default model)</h5>
+                    <table>
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr align="right" RowID="">
+                          <td align="left" class="B1" colspan="3">Parameter</td>
+                          <td class="B2">SE</td>
+                          <td class="B2">SE-SE</td>
+                          <td class="B2">Mean</td>
+                          <td class="B2">Bias</td>
+                          <td class="B2">SE-Bias</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_B" class="nopad">DISPO_B</td>
+                          <td align="left" class="nopad" nowrap="">&lt;---</td>
+                          <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                          <td x="0.155636247711948">.156</td>
+                          <td x="0.00348013229646912">.003</td>
+                          <td nowrap="" x="-0.822984374779854">-.823</td>
+                          <td nowrap="" x="-0.0032728041057555">-.003</td>
+                          <td x="0.00492165029251926">.005</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_A" class="nopad">DISPO_A</td>
+                          <td align="left" class="nopad" nowrap="">&lt;---</td>
+                          <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                          <td x="0.171075895332019">.171</td>
+                          <td x="0.00382537331274032">.004</td>
+                          <td x="2.44759483865554">2.448</td>
+                          <td x="0.000612096192946887">.001</td>
+                          <td x="0.00540989482001746">.005</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_C" class="nopad">DISPO_C</td>
+                          <td align="left" class="nopad" nowrap="">&lt;---</td>
+                          <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                          <td x="0.0543652196980315">.054</td>
+                          <td x="0.00121564326856509">.001</td>
+                          <td x="0.542617635449229">.543</td>
+                          <td x="0.00345026096462178">.003</td>
+                          <td x="0.00171917919741231">.002</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div nodecaption="Standardized Regression Weights:">
+                    <h5 h="813">Standardized Regression Weights: (Group number 1 -  Default model)</h5>
+                    <table>
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr align="right" RowID="">
+                          <td align="left" class="B1" colspan="3">Parameter</td>
+                          <td class="B2">SE</td>
+                          <td class="B2">SE-SE</td>
+                          <td class="B2">Mean</td>
+                          <td class="B2">Bias</td>
+                          <td class="B2">SE-Bias</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_B" class="nopad">DISPO_B</td>
+                          <td align="left" class="nopad" nowrap="">&lt;---</td>
+                          <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                          <td x="0.0599068530795351">.060</td>
+                          <td x="0.00133955795803933">.001</td>
+                          <td nowrap="" x="-0.337528723460256">-.338</td>
+                          <td nowrap="" x="-0.00157588611159178">-.002</td>
+                          <td x="0.00189442103184403">.002</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_A" class="nopad">DISPO_A</td>
+                          <td align="left" class="nopad" nowrap="">&lt;---</td>
+                          <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                          <td x="0.0379879982832263">.038</td>
+                          <td x="0.000849437464904394">.001</td>
+                          <td x="0.710942643320362">.711</td>
+                          <td nowrap="" x="-2.5161586631356E-05">.000</td>
+                          <td x="0.00120128598325561">.001</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_C" class="nopad">DISPO_C</td>
+                          <td align="left" class="nopad" nowrap="">&lt;---</td>
+                          <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                          <td x="0.0492404566441884">.049</td>
+                          <td x="0.00110105008299537">.001</td>
+                          <td x="0.634636065196601">.635</td>
+                          <td x="0.00172873467855508">.002</td>
+                          <td x="0.00155711996022407">.002</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div nodecaption="Variances:">
+                    <h5 h="575">Variances: (Group number 1 -  Default model)</h5>
+                    <table>
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr align="right" RowID="">
+                          <td align="left" class="B1" colspan="3">Parameter</td>
+                          <td class="B2">SE</td>
+                          <td class="B2">SE-SE</td>
+                          <td class="B2">Mean</td>
+                          <td class="B2">Bias</td>
+                          <td class="B2">SE-Bias</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="A_Bad_Good" class="nopad">A_Bad_Good</td>
+                          <td />
+                          <td class="B3" />
+                          <td x="0.00177224225450012">.002</td>
+                          <td x="3.96285415365974E-05">.000</td>
+                          <td x="0.248748733294989">.249</td>
+                          <td nowrap="" x="-0.00116226706100952">-.001</td>
+                          <td x="5.60432208981216E-05">.000</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="e2" class="nopad">e2</td>
+                          <td />
+                          <td class="B3" />
+                          <td x="0.114765859082427">.115</td>
+                          <td x="0.00256624262404469">.003</td>
+                          <td x="1.30311138613307">1.303</td>
+                          <td nowrap="" x="-0.016788310797591">-.017</td>
+                          <td x="0.00362921512326393">.004</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="e1" class="nopad">e1</td>
+                          <td />
+                          <td class="B3" />
+                          <td x="0.150366794591383">.150</td>
+                          <td x="0.00336230374265079">.003</td>
+                          <td x="1.45003685301919">1.450</td>
+                          <td nowrap="" x="-0.013943926665287">-.014</td>
+                          <td x="0.00475501555367457">.005</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="e3" class="nopad">e3</td>
+                          <td />
+                          <td class="B3" />
+                          <td x="0.0658717165803389">.066</td>
+                          <td x="0.00147293636068238">.001</td>
+                          <td x="0.637663939016757">.638</td>
+                          <td nowrap="" x="-0.00956076528323476">-.010</td>
+                          <td x="0.00208304657778949">.002</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div nodecaption="Squared Multiple Correlations:">
+                    <h5 h="576">Squared Multiple Correlations: (Group number 1 -  Default model)</h5>
+                    <table>
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr align="right" RowID="">
+                          <td align="left" class="B1" colspan="3">Parameter</td>
+                          <td class="B2">SE</td>
+                          <td class="B2">SE-SE</td>
+                          <td class="B2">Mean</td>
+                          <td class="B2">Bias</td>
+                          <td class="B2">SE-Bias</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_B" class="nopad">DISPO_B</td>
+                          <td />
+                          <td class="B3" />
+                          <td x="0.0402014705982051">.040</td>
+                          <td x="0.000898932210530458">.001</td>
+                          <td x="0.117510881375557">.118</td>
+                          <td x="0.00464657245293903">.005</td>
+                          <td x="0.0012712821237862">.001</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_C" class="nopad">DISPO_C</td>
+                          <td />
+                          <td class="B3" />
+                          <td x="0.0618786899550773">.062</td>
+                          <td x="0.00138364957098186">.001</td>
+                          <td x="0.405185133196182">.405</td>
+                          <td x="0.00461344417270311">.005</td>
+                          <td x="0.00195677598885426">.002</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_A" class="nopad">DISPO_A</td>
+                          <td />
+                          <td class="B3" />
+                          <td x="0.053639885455768">.054</td>
+                          <td x="0.001199424301844">.001</td>
+                          <td x="0.506881087016896">.507</td>
+                          <td x="0.00140586740262785">.001</td>
+                          <td x="0.00169624211470766">.002</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div ntype="matrices" nodecaption="Matrices" caption="Matrices">
+                  <div>
+                    <h5>Matrices (Group number 1 -  Default model)</h5>
+                  </div>
+                  <div nodecaption="Total Effects" ntype="ppml">
+                    <h5 h="7501">Total Effects - Standard Errors (Group number 1 -  Default model)</h5>
+                    <table inasentence="7501">
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr align="right" RowID="">
+                          <td class="B1" />
+                          <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                          <td vname="DISPO_B" class="B2">DISPO_B</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                          <td x="0.155636247711948">.156</td>
+                          <td x="0">.000</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                          <td x="0.09319146921131">.093</td>
+                          <td x="0.0543652196980315">.054</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                          <td x="0.171075895332019">.171</td>
+                          <td x="0">.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div nodecaption="Standardized Total Effects" ntype="ppml">
+                    <h5 h="7511">Standardized Total Effects - Standard Errors (Group number 1 -  Default model)</h5>
+                    <table inasentence="7511">
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr align="right" RowID="">
+                          <td class="B1" />
+                          <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                          <td vname="DISPO_B" class="B2">DISPO_B</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                          <td x="0.0599068530795351">.060</td>
+                          <td x="0">.000</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                          <td x="0.0416767364601736">.042</td>
+                          <td x="0.0492404566441884">.049</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                          <td x="0.0379879982832263">.038</td>
+                          <td x="0">.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div nodecaption="Direct Effects" ntype="ppml">
+                    <h5 h="7341">Direct Effects - Standard Errors (Group number 1 -  Default model)</h5>
+                    <table inasentence="7341">
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr align="right" RowID="">
+                          <td class="B1" />
+                          <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                          <td vname="DISPO_B" class="B2">DISPO_B</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                          <td x="0.155636247711948">.156</td>
+                          <td x="0">.000</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                          <td x="0">.000</td>
+                          <td x="0.0543652196980315">.054</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                          <td x="0.171075895332019">.171</td>
+                          <td x="0">.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div nodecaption="Standardized Direct Effects" ntype="ppml">
+                    <h5 h="7351">Standardized Direct Effects - Standard Errors (Group number 1 -  Default model)</h5>
+                    <table inasentence="7351">
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr align="right" RowID="">
+                          <td class="B1" />
+                          <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                          <td vname="DISPO_B" class="B2">DISPO_B</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                          <td x="0.0599068530795351">.060</td>
+                          <td x="0">.000</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                          <td x="0">.000</td>
+                          <td x="0.0492404566441884">.049</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                          <td x="0.0379879982832263">.038</td>
+                          <td x="0">.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div nodecaption="Indirect Effects" ntype="ppml">
+                    <h5 h="7401">Indirect Effects - Standard Errors (Group number 1 -  Default model)</h5>
+                    <table inasentence="7401">
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr align="right" RowID="">
+                          <td class="B1" />
+                          <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                          <td vname="DISPO_B" class="B2">DISPO_B</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                          <td x="0">.000</td>
+                          <td x="0">.000</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                          <td x="0.09319146921131">.093</td>
+                          <td x="0">.000</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                          <td x="0">.000</td>
+                          <td x="0">.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div nodecaption="Standardized Indirect Effects" ntype="ppml">
+                    <h5 h="7411">Standardized Indirect Effects - Standard Errors (Group number 1 -  Default model)</h5>
+                    <table inasentence="7411">
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr align="right" RowID="">
+                          <td class="B1" />
+                          <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                          <td vname="DISPO_B" class="B2">DISPO_B</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                          <td x="0">.000</td>
+                          <td x="0">.000</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                          <td x="0.0416767364601736">.042</td>
+                          <td x="0">.000</td>
+                        </tr>
+                        <tr align="right" RowID="">
+                          <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                          <td x="0">.000</td>
+                          <td x="0">.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div ntype="bootstrapconfidence" nodecaption="Bootstrap Confidence" caption="Bootstrap Confidence">
+                <div>
+                  <h5>Bootstrap Confidence (Group number 1 -  Default model)</h5>
+                </div>
+                <div ntype="percentile" nodecaption="Percentile method" caption="Percentile method">
+                  <div>
+                    <h5>Percentile method (Group number 1 -  Default model)</h5>
+                  </div>
+                  <h5>95% confidence intervals (percentile method)</h5>
+                  <div ntype="scalars" nodecaption="Scalars" caption="Scalar Estimates">
+                    <div>
+                      <h5>Scalar Estimates (Group number 1 -  Default model)</h5>
+                    </div>
+                    <div nodecaption="Regression Weights:">
+                      <h5 h="569">Regression Weights: (Group number 1 -  Default model)</h5>
+                      <table>
+                        <colgroup>
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                        </colgroup>
+                        <thead>
+                          <tr align="right" RowID="">
+                            <td align="left" class="B1" colspan="3">Parameter</td>
+                            <td class="B2">Estimate</td>
+                            <td class="B2">Lower</td>
+                            <td class="B2">Upper</td>
+                            <td class="B2">P</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_B" class="nopad">DISPO_B</td>
+                            <td align="left" class="nopad" nowrap="">&lt;---</td>
+                            <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                            <td nowrap="" x="-0.819711570674098">-.820</td>
+                            <td nowrap="" x="-1.14099742858367">-1.141</td>
+                            <td nowrap="" x="-0.498776428780176">-.499</td>
+                            <td x="0.002">.002</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_A" class="nopad">DISPO_A</td>
+                            <td align="left" class="nopad" nowrap="">&lt;---</td>
+                            <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                            <td x="2.44698274246259">2.447</td>
+                            <td x="2.11023237430429">2.110</td>
+                            <td x="2.78049698610284">2.780</td>
+                            <td x="0.002">.002</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_C" class="nopad">DISPO_C</td>
+                            <td align="left" class="nopad" nowrap="">&lt;---</td>
+                            <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                            <td x="0.539167374484607">.539</td>
+                            <td x="0.435258825978897">.435</td>
+                            <td x="0.650771802938763">.651</td>
+                            <td x="0.002">.002</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div nodecaption="Standardized Regression Weights:">
+                      <h5 h="813">Standardized Regression Weights: (Group number 1 -  Default model)</h5>
+                      <table>
+                        <colgroup>
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                        </colgroup>
+                        <thead>
+                          <tr align="right" RowID="">
+                            <td align="left" class="B1" colspan="3">Parameter</td>
+                            <td class="B2">Estimate</td>
+                            <td class="B2">Lower</td>
+                            <td class="B2">Upper</td>
+                            <td class="B2">P</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_B" class="nopad">DISPO_B</td>
+                            <td align="left" class="nopad" nowrap="">&lt;---</td>
+                            <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                            <td nowrap="" x="-0.335952837348664">-.336</td>
+                            <td nowrap="" x="-0.451074104676035">-.451</td>
+                            <td nowrap="" x="-0.210570759069418">-.211</td>
+                            <td x="0.002">.002</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_A" class="nopad">DISPO_A</td>
+                            <td align="left" class="nopad" nowrap="">&lt;---</td>
+                            <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                            <td x="0.710967804906993">.711</td>
+                            <td x="0.632181182310353">.632</td>
+                            <td x="0.779213841749985">.779</td>
+                            <td x="0.002">.002</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_C" class="nopad">DISPO_C</td>
+                            <td align="left" class="nopad" nowrap="">&lt;---</td>
+                            <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                            <td x="0.632907330518046">.633</td>
+                            <td x="0.530867369890717">.531</td>
+                            <td x="0.724141441611519">.724</td>
+                            <td x="0.002">.002</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div nodecaption="Variances:">
+                      <h5 h="575">Variances: (Group number 1 -  Default model)</h5>
+                      <table>
+                        <colgroup>
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                        </colgroup>
+                        <thead>
+                          <tr align="right" RowID="">
+                            <td align="left" class="B1" colspan="3">Parameter</td>
+                            <td class="B2">Estimate</td>
+                            <td class="B2">Lower</td>
+                            <td class="B2">Upper</td>
+                            <td class="B2">P</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="A_Bad_Good" class="nopad">A_Bad_Good</td>
+                            <td />
+                            <td class="B3" />
+                            <td x="0.249911000355999">.250</td>
+                            <td x="0.243569733139769">.244</td>
+                            <td x="0.249999999909954">.250</td>
+                            <td x="0.002">.002</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="e2" class="nopad">e2</td>
+                            <td />
+                            <td class="B3" />
+                            <td x="1.31989969693066">1.320</td>
+                            <td x="1.08666491660514">1.087</td>
+                            <td x="1.53976810515998">1.540</td>
+                            <td x="0.002">.002</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="e1" class="nopad">e1</td>
+                            <td />
+                            <td class="B3" />
+                            <td x="1.46398077968448">1.464</td>
+                            <td x="1.16746531708738">1.167</td>
+                            <td x="1.75593134424475">1.756</td>
+                            <td x="0.002">.002</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="e3" class="nopad">e3</td>
+                            <td />
+                            <td class="B3" />
+                            <td x="0.647224704299992">.647</td>
+                            <td x="0.51078452893868">.511</td>
+                            <td x="0.773452578182568">.773</td>
+                            <td x="0.002">.002</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div nodecaption="Squared Multiple Correlations:">
+                      <h5 h="576">Squared Multiple Correlations: (Group number 1 -  Default model)</h5>
+                      <table>
+                        <colgroup>
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                        </colgroup>
+                        <thead>
+                          <tr align="right" RowID="">
+                            <td align="left" class="B1" colspan="3">Parameter</td>
+                            <td class="B2">Estimate</td>
+                            <td class="B2">Lower</td>
+                            <td class="B2">Upper</td>
+                            <td class="B2">P</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_B" class="nopad">DISPO_B</td>
+                            <td />
+                            <td class="B3" />
+                            <td x="0.112864308922618">.113</td>
+                            <td x="0.0443400445750712">.044</td>
+                            <td x="0.203467847909287">.203</td>
+                            <td x="0.002">.002</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_C" class="nopad">DISPO_C</td>
+                            <td />
+                            <td class="B3" />
+                            <td x="0.400571689023479">.401</td>
+                            <td x="0.281820164414688">.282</td>
+                            <td x="0.52438082745921">.524</td>
+                            <td x="0.002">.002</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_A" class="nopad">DISPO_A</td>
+                            <td />
+                            <td class="B3" />
+                            <td x="0.505475219614268">.505</td>
+                            <td x="0.399653047267316">.400</td>
+                            <td x="0.607174211174771">.607</td>
+                            <td x="0.002">.002</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div ntype="matrices" nodecaption="Matrices" caption="Matrices">
+                    <div>
+                      <h5>Matrices (Group number 1 -  Default model)</h5>
+                    </div>
+                    <div ntype="matrix" nodecaption="Total Effects" caption="Total Effects">
+                      <div>
+                        <h5>Total Effects (Group number 1 -  Default model)</h5>
+                      </div>
+                      <div nodecaption=" Lower Bounds (PC)" ntype="ppml">
+                        <h5 h="7507">Total Effects -  Lower Bounds (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7507">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-1.14099742858367">-1.141</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.64726394280526">-.647</td>
+                              <td x="0.435258825978897">.435</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="2.11023237430429">2.110</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Upper Bounds (PC)" ntype="ppml">
+                        <h5 h="7508">Total Effects -  Upper Bounds (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7508">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-0.498776428780176">-.499</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.264871081583432">-.265</td>
+                              <td x="0.650771802938763">.651</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="2.78049698610284">2.780</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Two Tailed Significance (PC)" ntype="ppml">
+                        <h5 h="7509">Total Effects -  Two Tailed Significance (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7509">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0.002">.002</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0.002">.002</td>
+                              <td x="0.002">.002</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.002">.002</td>
+                              <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div ntype="matrix" nodecaption="Standardized Total Effects" caption="Standardized Total Effects">
+                      <div>
+                        <h5>Standardized Total Effects (Group number 1 -  Default model)</h5>
+                      </div>
+                      <div nodecaption=" Lower Bounds (PC)" ntype="ppml">
+                        <h5 h="7517">Standardized Total Effects -  Lower Bounds (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7517">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-0.451074104676035">-.451</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.299825085813594">-.300</td>
+                              <td x="0.530867369890716">.531</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.632181182310353">.632</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Upper Bounds (PC)" ntype="ppml">
+                        <h5 h="7518">Standardized Total Effects -  Upper Bounds (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7518">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-0.210570759069418">-.211</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.132629167617632">-.133</td>
+                              <td x="0.724141441611519">.724</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.779213841749985">.779</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Two Tailed Significance (PC)" ntype="ppml">
+                        <h5 h="7519">Standardized Total Effects -  Two Tailed Significance (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7519">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0.002">.002</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0.002">.002</td>
+                              <td x="0.002">.002</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.002">.002</td>
+                              <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div ntype="matrix" nodecaption="Direct Effects" caption="Direct Effects">
+                      <div>
+                        <h5>Direct Effects (Group number 1 -  Default model)</h5>
+                      </div>
+                      <div nodecaption=" Lower Bounds (PC)" ntype="ppml">
+                        <h5 h="7347">Direct Effects -  Lower Bounds (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7347">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-1.14099742858367">-1.141</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0">.000</td>
+                              <td x="0.435258825978897">.435</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="2.11023237430429">2.110</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Upper Bounds (PC)" ntype="ppml">
+                        <h5 h="7348">Direct Effects -  Upper Bounds (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7348">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-0.498776428780176">-.499</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0">.000</td>
+                              <td x="0.650771802938763">.651</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="2.78049698610284">2.780</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Two Tailed Significance (PC)" ntype="ppml">
+                        <h5 h="7349">Direct Effects -  Two Tailed Significance (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7349">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0.002">.002</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td>...</td>
+                              <td x="0.002">.002</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.002">.002</td>
+                              <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div ntype="matrix" nodecaption="Standardized Direct Effects" caption="Standardized Direct Effects">
+                      <div>
+                        <h5>Standardized Direct Effects (Group number 1 -  Default model)</h5>
+                      </div>
+                      <div nodecaption=" Lower Bounds (PC)" ntype="ppml">
+                        <h5 h="7357">Standardized Direct Effects -  Lower Bounds (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7357">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-0.451074104676035">-.451</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0">.000</td>
+                              <td x="0.530867369890716">.531</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.632181182310353">.632</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Upper Bounds (PC)" ntype="ppml">
+                        <h5 h="7358">Standardized Direct Effects -  Upper Bounds (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7358">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-0.210570759069418">-.211</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0">.000</td>
+                              <td x="0.724141441611519">.724</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.779213841749985">.779</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Two Tailed Significance (PC)" ntype="ppml">
+                        <h5 h="7359">Standardized Direct Effects -  Two Tailed Significance (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7359">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0.002">.002</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td>...</td>
+                              <td x="0.002">.002</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.002">.002</td>
+                              <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div ntype="matrix" nodecaption="Indirect Effects" caption="Indirect Effects">
+                      <div>
+                        <h5>Indirect Effects (Group number 1 -  Default model)</h5>
+                      </div>
+                      <div nodecaption=" Lower Bounds (PC)" ntype="ppml">
+                        <h5 h="7407">Indirect Effects -  Lower Bounds (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7407">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.64726394280526">-.647</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Upper Bounds (PC)" ntype="ppml">
+                        <h5 h="7408">Indirect Effects -  Upper Bounds (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7408">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.264871081583432">-.265</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Two Tailed Significance (PC)" ntype="ppml">
+                        <h5 h="7409">Indirect Effects -  Two Tailed Significance (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7409">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td>...</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0.002">.002</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td>...</td>
+                              <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div ntype="matrix" nodecaption="Standardized Indirect Effects" caption="Standardized Indirect Effects">
+                      <div>
+                        <h5>Standardized Indirect Effects (Group number 1 -  Default model)</h5>
+                      </div>
+                      <div nodecaption=" Lower Bounds (PC)" ntype="ppml">
+                        <h5 h="7417">Standardized Indirect Effects -  Lower Bounds (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7417">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.299825085813594">-.300</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Upper Bounds (PC)" ntype="ppml">
+                        <h5 h="7418">Standardized Indirect Effects -  Upper Bounds (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7418">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.132629167617632">-.133</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Two Tailed Significance (PC)" ntype="ppml">
+                        <h5 h="7419">Standardized Indirect Effects -  Two Tailed Significance (PC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7419">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td>...</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0.002">.002</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td>...</td>
+                              <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div ntype="biascorrected" nodecaption="Bias-corrected percentile method" caption="Bias-corrected percentile method">
+                  <div>
+                    <h5>Bias-corrected percentile method (Group number 1 -  Default model)</h5>
+                  </div>
+                  <h5>95% confidence intervals (bias-corrected percentile method)</h5>
+                  <div ntype="scalars" nodecaption="Scalars" caption="Scalar Estimates">
+                    <div>
+                      <h5>Scalar Estimates (Group number 1 -  Default model)</h5>
+                    </div>
+                    <div nodecaption="Regression Weights:">
+                      <h5 h="569">Regression Weights: (Group number 1 -  Default model)</h5>
+                      <table>
+                        <colgroup>
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                        </colgroup>
+                        <thead>
+                          <tr align="right" RowID="">
+                            <td align="left" class="B1" colspan="3">Parameter</td>
+                            <td class="B2">Estimate</td>
+                            <td class="B2">Lower</td>
+                            <td class="B2">Upper</td>
+                            <td class="B2">P</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_B" class="nopad">DISPO_B</td>
+                            <td align="left" class="nopad" nowrap="">&lt;---</td>
+                            <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                            <td nowrap="" x="-0.819711570674098">-.820</td>
+                            <td nowrap="" x="-1.12495736658297">-1.125</td>
+                            <td nowrap="" x="-0.485177947065083">-.485</td>
+                            <td x="0.00270012360205873">.003</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_A" class="nopad">DISPO_A</td>
+                            <td align="left" class="nopad" nowrap="">&lt;---</td>
+                            <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                            <td x="2.44698274246259">2.447</td>
+                            <td x="2.10962295069495">2.110</td>
+                            <td x="2.7804206319609">2.780</td>
+                            <td x="0.00203402292973509">.002</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_C" class="nopad">DISPO_C</td>
+                            <td align="left" class="nopad" nowrap="">&lt;---</td>
+                            <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                            <td x="0.539167374484607">.539</td>
+                            <td x="0.420227382075634">.420</td>
+                            <td x="0.641745056530621">.642</td>
+                            <td x="0.00339359622805957">.003</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div nodecaption="Standardized Regression Weights:">
+                      <h5 h="813">Standardized Regression Weights: (Group number 1 -  Default model)</h5>
+                      <table>
+                        <colgroup>
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                        </colgroup>
+                        <thead>
+                          <tr align="right" RowID="">
+                            <td align="left" class="B1" colspan="3">Parameter</td>
+                            <td class="B2">Estimate</td>
+                            <td class="B2">Lower</td>
+                            <td class="B2">Upper</td>
+                            <td class="B2">P</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_B" class="nopad">DISPO_B</td>
+                            <td align="left" class="nopad" nowrap="">&lt;---</td>
+                            <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                            <td nowrap="" x="-0.335952837348664">-.336</td>
+                            <td nowrap="" x="-0.446478074897295">-.446</td>
+                            <td nowrap="" x="-0.196141794917308">-.196</td>
+                            <td x="0.00302861308611257">.003</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_A" class="nopad">DISPO_A</td>
+                            <td align="left" class="nopad" nowrap="">&lt;---</td>
+                            <td align="left" vname="A_Bad_Good" class="B3">A_Bad_Good</td>
+                            <td x="0.710967804906993">.711</td>
+                            <td x="0.628605703615439">.629</td>
+                            <td x="0.778710547342003">.779</td>
+                            <td x="0.00232595864882912">.002</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_C" class="nopad">DISPO_C</td>
+                            <td align="left" class="nopad" nowrap="">&lt;---</td>
+                            <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                            <td x="0.632907330518046">.633</td>
+                            <td x="0.515027088387503">.515</td>
+                            <td x="0.713747225796073">.714</td>
+                            <td x="0.0044556387965633">.004</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div nodecaption="Variances:">
+                      <h5 h="575">Variances: (Group number 1 -  Default model)</h5>
+                      <table>
+                        <colgroup>
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                        </colgroup>
+                        <thead>
+                          <tr align="right" RowID="">
+                            <td align="left" class="B1" colspan="3">Parameter</td>
+                            <td class="B2">Estimate</td>
+                            <td class="B2">Lower</td>
+                            <td class="B2">Upper</td>
+                            <td class="B2">P</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="A_Bad_Good" class="nopad">A_Bad_Good</td>
+                            <td />
+                            <td class="B3" />
+                            <td x="0.249911000355999">.250</td>
+                            <td x="0.248909758668748">.249</td>
+                            <td>...</td>
+                            <td x="2.83615020091332E-06">.000</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="e2" class="nopad">e2</td>
+                            <td />
+                            <td class="B3" />
+                            <td x="1.31989969693066">1.320</td>
+                            <td x="1.13625118217035">1.136</td>
+                            <td x="1.62906217937568">1.629</td>
+                            <td x="0.000399855695388585">.000</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="e1" class="nopad">e1</td>
+                            <td />
+                            <td class="B3" />
+                            <td x="1.46398077968448">1.464</td>
+                            <td x="1.18661958817073">1.187</td>
+                            <td x="1.78223565790373">1.782</td>
+                            <td x="0.000928753061655296">.001</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="e3" class="nopad">e3</td>
+                            <td />
+                            <td class="B3" />
+                            <td x="0.647224704299992">.647</td>
+                            <td x="0.527325538045399">.527</td>
+                            <td x="0.793217465721285">.793</td>
+                            <td x="0.000668173086294743">.001</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div nodecaption="Squared Multiple Correlations:">
+                      <h5 h="576">Squared Multiple Correlations: (Group number 1 -  Default model)</h5>
+                      <table>
+                        <colgroup>
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                        </colgroup>
+                        <thead>
+                          <tr align="right" RowID="">
+                            <td align="left" class="B1" colspan="3">Parameter</td>
+                            <td class="B2">Estimate</td>
+                            <td class="B2">Lower</td>
+                            <td class="B2">Upper</td>
+                            <td class="B2">P</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_B" class="nopad">DISPO_B</td>
+                            <td />
+                            <td class="B3" />
+                            <td x="0.112864308922618">.113</td>
+                            <td x="0.0384716659435102">.038</td>
+                            <td x="0.199342671364891">.199</td>
+                            <td x="0.00302861308611257">.003</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_C" class="nopad">DISPO_C</td>
+                            <td />
+                            <td class="B3" />
+                            <td x="0.400571689023479">.401</td>
+                            <td x="0.265253101517972">.265</td>
+                            <td x="0.509435205283904">.509</td>
+                            <td x="0.0044556387965633">.004</td>
+                          </tr>
+                          <tr align="right" RowID="">
+                            <td align="left" vname="DISPO_A" class="nopad">DISPO_A</td>
+                            <td />
+                            <td class="B3" />
+                            <td x="0.505475219614268">.505</td>
+                            <td x="0.395145416436329">.395</td>
+                            <td x="0.606390116740246">.606</td>
+                            <td x="0.00232595864882912">.002</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div ntype="matrices" nodecaption="Matrices" caption="Matrices">
+                    <div>
+                      <h5>Matrices (Group number 1 -  Default model)</h5>
+                    </div>
+                    <div ntype="matrix" nodecaption="Total Effects" caption="Total Effects">
+                      <div>
+                        <h5>Total Effects (Group number 1 -  Default model)</h5>
+                      </div>
+                      <div nodecaption=" Lower Bounds (BC)" ntype="ppml">
+                        <h5 h="7503">Total Effects -  Lower Bounds (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7503">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-1.12495736658297">-1.125</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.643306102932354">-.643</td>
+                              <td x="0.420227382075634">.420</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="2.10962295069495">2.110</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Upper Bounds (BC)" ntype="ppml">
+                        <h5 h="7504">Total Effects -  Upper Bounds (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7504">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-0.485177947065083">-.485</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.261833143403104">-.262</td>
+                              <td x="0.641745056530621">.642</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="2.7804206319609">2.780</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Two Tailed Significance (BC)" ntype="ppml">
+                        <h5 h="7505">Total Effects -  Two Tailed Significance (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7505">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0.00270012360205873">.003</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0.00224957205140131">.002</td>
+                              <td x="0.00339359622805957">.003</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.00203402292973509">.002</td>
+                              <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div ntype="matrix" nodecaption="Standardized Total Effects" caption="Standardized Total Effects">
+                      <div>
+                        <h5>Standardized Total Effects (Group number 1 -  Default model)</h5>
+                      </div>
+                      <div nodecaption=" Lower Bounds (BC)" ntype="ppml">
+                        <h5 h="7513">Standardized Total Effects -  Lower Bounds (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7513">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-0.446478074897295">-.446</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.294461917803075">-.294</td>
+                              <td x="0.515027088387503">.515</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.628605703615439">.629</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Upper Bounds (BC)" ntype="ppml">
+                        <h5 h="7514">Standardized Total Effects -  Upper Bounds (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7514">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-0.196141794917308">-.196</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.12470214312827">-.125</td>
+                              <td x="0.713747225796073">.714</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.778710547342003">.779</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Two Tailed Significance (BC)" ntype="ppml">
+                        <h5 h="7515">Standardized Total Effects -  Two Tailed Significance (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7515">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0.00302861308611257">.003</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0.00283666173259123">.003</td>
+                              <td x="0.0044556387965633">.004</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.00232595864882912">.002</td>
+                              <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div ntype="matrix" nodecaption="Direct Effects" caption="Direct Effects">
+                      <div>
+                        <h5>Direct Effects (Group number 1 -  Default model)</h5>
+                      </div>
+                      <div nodecaption=" Lower Bounds (BC)" ntype="ppml">
+                        <h5 h="7343">Direct Effects -  Lower Bounds (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7343">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-1.12495736658297">-1.125</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0">.000</td>
+                              <td x="0.420227382075634">.420</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="2.10962295069495">2.110</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Upper Bounds (BC)" ntype="ppml">
+                        <h5 h="7344">Direct Effects -  Upper Bounds (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7344">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-0.485177947065083">-.485</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0">.000</td>
+                              <td x="0.641745056530621">.642</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="2.7804206319609">2.780</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Two Tailed Significance (BC)" ntype="ppml">
+                        <h5 h="7345">Direct Effects -  Two Tailed Significance (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7345">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0.00270012360205873">.003</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td>...</td>
+                              <td x="0.00339359622805957">.003</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.00203402292973509">.002</td>
+                              <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div ntype="matrix" nodecaption="Standardized Direct Effects" caption="Standardized Direct Effects">
+                      <div>
+                        <h5>Standardized Direct Effects (Group number 1 -  Default model)</h5>
+                      </div>
+                      <div nodecaption=" Lower Bounds (BC)" ntype="ppml">
+                        <h5 h="7353">Standardized Direct Effects -  Lower Bounds (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7353">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-0.446478074897295">-.446</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0">.000</td>
+                              <td x="0.515027088387503">.515</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.628605703615439">.629</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Upper Bounds (BC)" ntype="ppml">
+                        <h5 h="7354">Standardized Direct Effects -  Upper Bounds (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7354">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td nowrap="" x="-0.196141794917308">-.196</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0">.000</td>
+                              <td x="0.713747225796073">.714</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.778710547342003">.779</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Two Tailed Significance (BC)" ntype="ppml">
+                        <h5 h="7355">Standardized Direct Effects -  Two Tailed Significance (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7355">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0.00302861308611257">.003</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td>...</td>
+                              <td x="0.0044556387965633">.004</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0.00232595864882912">.002</td>
+                              <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div ntype="matrix" nodecaption="Indirect Effects" caption="Indirect Effects">
+                      <div>
+                        <h5>Indirect Effects (Group number 1 -  Default model)</h5>
+                      </div>
+                      <div nodecaption=" Lower Bounds (BC)" ntype="ppml">
+                        <h5 h="7403">Indirect Effects -  Lower Bounds (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7403">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.643306102932354">-.643</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Upper Bounds (BC)" ntype="ppml">
+                        <h5 h="7404">Indirect Effects -  Upper Bounds (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7404">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.261833143403104">-.262</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Two Tailed Significance (BC)" ntype="ppml">
+                        <h5 h="7405">Indirect Effects -  Two Tailed Significance (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7405">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td>...</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0.00224957205140131">.002</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td>...</td>
+                              <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div ntype="matrix" nodecaption="Standardized Indirect Effects" caption="Standardized Indirect Effects">
+                      <div>
+                        <h5>Standardized Indirect Effects (Group number 1 -  Default model)</h5>
+                      </div>
+                      <div nodecaption=" Lower Bounds (BC)" ntype="ppml">
+                        <h5 h="7413">Standardized Indirect Effects -  Lower Bounds (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7413">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.294461917803075">-.294</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Upper Bounds (BC)" ntype="ppml">
+                        <h5 h="7414">Standardized Indirect Effects -  Upper Bounds (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7414">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td nowrap="" x="-0.12470214312827">-.125</td>
+                              <td x="0">.000</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td x="0">.000</td>
+                              <td x="0">.000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div nodecaption=" Two Tailed Significance (BC)" ntype="ppml">
+                        <h5 h="7415">Standardized Indirect Effects -  Two Tailed Significance (BC) (Group number 1 -  Default model)</h5>
+                        <table inasentence="7415">
+                          <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr align="right" RowID="">
+                              <td class="B1" />
+                              <td vname="A_Bad_Good" class="B2">A_Bad_Good</td>
+                              <td vname="DISPO_B" class="B2">DISPO_B</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_B" class="B3">DISPO_B</td>
+                              <td>...</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_C" class="B3">DISPO_C</td>
+                              <td x="0.00283666173259123">.003</td>
+                              <td>...</td>
+                            </tr>
+                            <tr align="right" RowID="">
+                              <td align="left" vname="DISPO_A" class="B3">DISPO_A</td>
+                              <td>...</td>
+                              <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div nodecaption="Minimization History" ntype="minimizationhistory">
+            <h5 h="501">Minimization History (Default model)</h5>
+            <table>
+              <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <thead>
+                <tr align="right" RowID="">
+                  <td class="B1">Iteration</td>
+                  <td class="B2" />
+                  <td class="B2">Negative<br>eigenvalues</br></td>
+                  <td class="B2">Condition #</td>
+                  <td class="B2">Smallest<br>eigenvalue</br></td>
+                  <td class="B2">Diameter</td>
+                  <td class="B2">F</td>
+                  <td class="B2">NTries</td>
+                  <td class="B2">Ratio</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr align="right" RowID="">
+                  <td class="B3">0</td>
+                  <td align="left">e</td>
+                  <td>1</td>
+                  <td />
+                  <td nowrap="" x="-0.00398990274196273">-.004</td>
+                  <td x="9999">9999.000</td>
+                  <td x="246.708515720306">246.709</td>
+                  <td>0</td>
+                  <td x="9999">9999.000</td>
+                </tr>
+                <tr align="right" RowID="">
+                  <td class="B3">1</td>
+                  <td align="left">e</td>
+                  <td>0</td>
+                  <td x="7.17069448291387">7.171</td>
+                  <td />
+                  <td x="1.1331646545286">1.133</td>
+                  <td x="6.90906518604936">6.909</td>
+                  <td>19</td>
+                  <td x="0.778573880822186">.779</td>
+                </tr>
+                <tr align="right" RowID="">
+                  <td class="B3">2</td>
+                  <td align="left">e</td>
+                  <td>0</td>
+                  <td x="4.48632507433952">4.486</td>
+                  <td />
+                  <td x="0.130049222894567">.130</td>
+                  <td x="1.21554545901085">1.216</td>
+                  <td>1</td>
+                  <td x="1.03702615671502">1.037</td>
+                </tr>
+                <tr align="right" RowID="">
+                  <td class="B3">3</td>
+                  <td align="left">e</td>
+                  <td>0</td>
+                  <td x="3.97477222481642">3.975</td>
+                  <td />
+                  <td x="0.0190817989561995">.019</td>
+                  <td x="1.08247407510453">1.082</td>
+                  <td>1</td>
+                  <td x="1.03336775430136">1.033</td>
+                </tr>
+                <tr align="right" RowID="">
+                  <td class="B3">4</td>
+                  <td align="left">e</td>
+                  <td>0</td>
+                  <td x="3.9456544434548">3.946</td>
+                  <td />
+                  <td x="0.000973346670920296">.001</td>
+                  <td x="1.08209302062448">1.082</td>
+                  <td>1</td>
+                  <td x="1.00235387785884">1.002</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div nodecaption="Pairwise Parameter Comparisons" caption="Pairwise Parameter Comparisons" ntype="parameterpairs">
+            <div>
+              <h5>Pairwise Parameter Comparisons (Default model)</h5>
+            </div>
+            <div nodecaption="Critical Ratios for Differences between Parameters" ntype="ppml">
+              <h5 h="778">Critical Ratios for Differences between Parameters (Default model)</h5>
+              <table inasentence="778">
+                <colgroup>
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr align="right" RowID="">
+                    <td class="B1" />
+                    <td class="B2">par_1</td>
+                    <td class="B2">par_2</td>
+                    <td class="B2">par_3</td>
+                    <td class="B2">par_4</td>
+                    <td class="B2">par_5</td>
+                    <td class="B2">par_6</td>
+                    <td class="B2">par_7</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr align="right" RowID="">
+                    <td align="left" class="B3">par_1</td>
+                    <td x="0">.000</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td align="left" class="B3">par_2</td>
+                    <td nowrap="" x="-14.2172996843372">-14.217</td>
+                    <td x="0">.000</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td align="left" class="B3">par_3</td>
+                    <td nowrap="" x="-11.0470900054199">-11.047</td>
+                    <td x="8.25576120546234">8.256</td>
+                    <td x="0">.000</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td align="left" class="B3">par_4</td>
+                    <td nowrap="" x="-13.0475474068245">-13.048</td>
+                    <td x="6.68217893143854">6.682</td>
+                    <td nowrap="" x="-5.61511753606008">-5.615</td>
+                    <td x="0">.000</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td align="left" class="B3">par_5</td>
+                    <td nowrap="" x="-5.35637196634014">-5.356</td>
+                    <td x="10.4973959464954">10.497</td>
+                    <td x="5.72848714185644">5.728</td>
+                    <td x="8.18118210992893">8.181</td>
+                    <td x="0">.000</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td align="left" class="B3">par_6</td>
+                    <td nowrap="" x="-4.48312188168824">-4.483</td>
+                    <td x="10.7243056910969">10.724</td>
+                    <td x="6.18237868910928">6.182</td>
+                    <td x="8.39647745965013">8.396</td>
+                    <td x="0.750786969225108">.751</td>
+                    <td x="0">.000</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td align="left" class="B3">par_7</td>
+                    <td nowrap="" x="-10.1030812862674">-10.103</td>
+                    <td x="8.61395030254869">8.614</td>
+                    <td x="1.39127468513432">1.391</td>
+                    <td x="5.88202524180303">5.882</td>
+                    <td nowrap="" x="-4.70002977573167">-4.700</td>
+                    <td nowrap="" x="-5.2410368587589">-5.241</td>
+                    <td x="0">.000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div ntype="bootstrap" nodecaption="Bootstrap" caption="Bootstrap">
+            <div>
+              <h5>Bootstrap (Default model)</h5>
+            </div>
+            <div ntype="bootstrapsummary" nodecaption="Summary of Bootstrap Iterations" caption="Summary of Bootstrap Iterations">
+              <div>
+                <h5 h="538">Summary of Bootstrap Iterations (Default model)</h5>
+              </div>
+              <h5 h="538"> (Default model)</h5>
+              <table>
+                <colgroup>
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr align="right" RowID="">
+                    <td class="B2">Iterations</td>
+                    <td class="B2">Method 0</td>
+                    <td class="B2">Method 1</td>
+                    <td class="B2">Method 2</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr align="right" RowID="">
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>3</td>
+                    <td>0</td>
+                    <td>103</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>4</td>
+                    <td>0</td>
+                    <td>449</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>5</td>
+                    <td>0</td>
+                    <td>371</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>6</td>
+                    <td>0</td>
+                    <td>73</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>7</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>8</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>9</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>10</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>11</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>12</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>13</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>14</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>15</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>16</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>17</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>18</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>19</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr align="right" RowID="">
+                    <td>Total</td>
+                    <td>0</td>
+                    <td>1000</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div>0 bootstrap samples were unused because of a singular covariance matrix.</div>
+              <div>0 bootstrap samples were unused because a solution was not found.</div>
+              <div>1000 usable bootstrap samples were obtained.</div>
+            </div>
+            <div ntype="bootstrapdistributions" nodecaption="Bootstrap Distributions" caption="Bootstrap Distributions">
+              <div>
+                <h5 h="597">Bootstrap Distributions (Default model)</h5>
+              </div>
+              <div nodecaption="ML discrepancy (implied vs sample)">
+                <h5 h="7611">ML discrepancy (implied vs sample) (Default model)</h5>
+                <table>
+                  <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td />
+                      <td align="left">|--------------------</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="0.0176996171902601">.018</td>
+                      <td align="left">|********</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="2.6536576371027">2.654</td>
+                      <td align="left">|********************</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="5.28961565701514">5.290</td>
+                      <td align="left">|*************</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="7.92557367692758">7.926</td>
+                      <td align="left">|*******</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="10.56153169684">10.562</td>
+                      <td align="left">|***</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="13.1974897167525">13.197</td>
+                      <td align="left">|**</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="15.8334477366649">15.833</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td h="7609" align="left">N = 1000</td>
+                      <td x="18.4694057565773">18.469</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td align="left">
+                        <span h="7612">Mean = <span h="-1" x="4.67806734706856">4.678</span></span>
+                      </td>
+                      <td x="21.1053637764898">21.105</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td align="left">
+                        <span h="7610">S. e. = <span h="-1" x="0.119685119842691">.120</span></span>
+                      </td>
+                      <td x="23.7413217964022">23.741</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="26.3772798163147">26.377</td>
+                      <td align="left">|</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="29.0132378362271">29.013</td>
+                      <td align="left">|</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="31.6491958561395">31.649</td>
+                      <td align="left">|</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="34.285153876052">34.285</td>
+                      <td align="left">|</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="36.9211118959644">36.921</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td align="left" />
+                      <td align="left" />
+                      <td align="left">|--------------------</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div nodecaption="ML discrepancy (implied vs pop)">
+                <h5 h="7613">ML discrepancy (implied vs pop) (Default model)</h5>
+                <table>
+                  <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td />
+                      <td align="left">|--------------------</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="2.39891507834744">2.399</td>
+                      <td align="left">|**</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="6.66144570101958">6.661</td>
+                      <td align="left">|******************</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="10.9239763236917">10.924</td>
+                      <td align="left">|*******************</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="15.1865069463638">15.187</td>
+                      <td align="left">|************</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="19.449037569036">19.449</td>
+                      <td align="left">|******</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="23.7115681917081">23.712</td>
+                      <td align="left">|***</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="27.9740988143803">27.974</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td h="7609" align="left">N = 1000</td>
+                      <td x="32.2366294370524">32.237</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td align="left">
+                        <span h="7614">Mean = <span h="-1" x="11.9566496010222">11.957</span></span>
+                      </td>
+                      <td x="36.4991600597245">36.499</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td align="left">
+                        <span h="7610">S. e. = <span h="-1" x="0.182472998702604">.182</span></span>
+                      </td>
+                      <td x="40.7616906823967">40.762</td>
+                      <td align="left">|</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="45.0242213050688">45.024</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="49.2867519277409">49.287</td>
+                      <td align="left">|</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="53.5492825504131">53.549</td>
+                      <td align="left">|</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="57.8118131730852">57.812</td>
+                      <td align="left">|</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="62.0743437957573">62.074</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td align="left" />
+                      <td align="left" />
+                      <td align="left">|--------------------</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div nodecaption="K-L overoptimism (unstabilized)">
+                <h5 h="7615">K-L overoptimism (unstabilized) (Default model)</h5>
+                <table>
+                  <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td />
+                      <td align="left">|--------------------</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td nowrap="" x="-98.4636368067212">-98.464</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td nowrap="" x="-79.4182314408402">-79.418</td>
+                      <td align="left">|**</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td nowrap="" x="-60.3728260749592">-60.373</td>
+                      <td align="left">|****</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td nowrap="" x="-41.3274207090782">-41.327</td>
+                      <td align="left">|*******</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td nowrap="" x="-22.2820153431972">-22.282</td>
+                      <td align="left">|**************</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td nowrap="" x="-3.23660997731625">-3.237</td>
+                      <td align="left">|****************</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="15.8087953885647">15.809</td>
+                      <td align="left">|*******************</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td h="7609" align="left">N = 1000</td>
+                      <td x="34.8542007544457">34.854</td>
+                      <td align="left">|******************</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td align="left">
+                        <span h="7616">Mean = <span h="-1" x="22.8166403287934">22.817</span></span>
+                      </td>
+                      <td x="53.8996061203267">53.900</td>
+                      <td align="left">|***************</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td align="left">
+                        <span h="7610">S. e. = <span h="-1" x="1.39410274360599">1.394</span></span>
+                      </td>
+                      <td x="72.9450114862077">72.945</td>
+                      <td align="left">|**********</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="91.9904168520887">91.990</td>
+                      <td align="left">|*******</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="111.03582221797">111.036</td>
+                      <td align="left">|**</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="130.081227583851">130.081</td>
+                      <td align="left">|**</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="149.126632949732">149.127</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="168.172038315613">168.172</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td align="left" />
+                      <td align="left" />
+                      <td align="left">|--------------------</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div nodecaption="K-L overoptimism (stabilized)">
+                <h5 h="7617">K-L overoptimism (stabilized) (Default model)</h5>
+                <table>
+                  <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td />
+                      <td align="left">|--------------------</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="5.74896784580825">5.749</td>
+                      <td align="left">|**</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="11.94584555073">11.946</td>
+                      <td align="left">|*****************</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="18.1427232556517">18.143</td>
+                      <td align="left">|********************</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="24.3396009605734">24.340</td>
+                      <td align="left">|****************</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="30.5364786654951">30.536</td>
+                      <td align="left">|********</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="36.7333563704168">36.733</td>
+                      <td align="left">|****</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="42.9302340753385">42.930</td>
+                      <td align="left">|**</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td h="7609" align="left">N = 1000</td>
+                      <td x="49.1271117802602">49.127</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td align="left">
+                        <span h="7618">Mean = <span h="-1" x="21.4777858868675">21.478</span></span>
+                      </td>
+                      <td x="55.3239894851819">55.324</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td align="left">
+                        <span h="7610">S. e. = <span h="-1" x="0.294895548712711">.295</span></span>
+                      </td>
+                      <td x="61.5208671901036">61.521</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="67.7177448950253">67.718</td>
+                      <td align="left">|</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="73.914622599947">73.915</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="80.1115003048687">80.112</td>
+                      <td align="left">|</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="86.3083780097904">86.308</td>
+                      <td align="left">|</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td />
+                      <td x="92.5052557147121">92.505</td>
+                      <td align="left">|*</td>
+                    </tr>
+                    <tr align="right" RowID="">
+                      <td align="left" />
+                      <td align="left" />
+                      <td align="left">|--------------------</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div ntype="modelfit" nodecaption="Model Fit" caption="Model Fit Summary">
+        <div>
+          <h5>Model Fit Summary</h5>
+        </div>
+        <div nodecaption="CMIN">
+          <h5>CMIN</h5>
+          <table>
+            <colgroup>
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+            </colgroup>
+            <thead>
+              <tr align="right" RowID="">
+                <td align="left" class="B1">Model</td>
+                <td h="7904" class="B2">NPAR</td>
+                <td h="7901" class="B2">CMIN</td>
+                <td h="7902" class="B2">DF</td>
+                <td h="7903" class="B2">P</td>
+                <td h="7905" class="B2">CMIN/DF</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Default model</td>
+                <td h="7804">7</td>
+                <td h="7801" x="1.08209302062448">1.082</td>
+                <td h="7802">3</td>
+                <td h="7803" x="0.781398563291169">.781</td>
+                <td h="7805" x="0.360697673541495">.361</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Saturated model</td>
+                <td h="7804">10</td>
+                <td h="7801" x="0">.000</td>
+                <td h="7802">0</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Independence model</td>
+                <td h="7804">4</td>
+                <td h="7801" x="282.912784749654">282.913</td>
+                <td h="7802">6</td>
+                <td h="7803" x="3.73787393136379E-58">.000</td>
+                <td h="7805" x="47.152130791609">47.152</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div nodecaption="RMR, GFI">
+          <h5>RMR, GFI</h5>
+          <table>
+            <colgroup>
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+            </colgroup>
+            <thead>
+              <tr align="right" RowID="">
+                <td align="left" class="B1">Model</td>
+                <td h="7907" class="B2">RMR</td>
+                <td h="7908" class="B2">GFI</td>
+                <td h="7909" class="B2">AGFI</td>
+                <td h="7910" class="B2">PGFI</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Default model</td>
+                <td h="7807" x="0.0236651547825077">.024</td>
+                <td h="7808" x="0.997464883947824">.997</td>
+                <td h="7809" x="0.991549613159414">.992</td>
+                <td h="7810" x="0.299239465184347">.299</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Saturated model</td>
+                <td h="7807" x="0">.000</td>
+                <td h="7808" x="1">1.000</td>
+                <td />
+                <td />
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Independence model</td>
+                <td h="7807" x="0.38128485953301">.381</td>
+                <td h="7808" x="0.634936058134592">.635</td>
+                <td h="7809" x="0.391560096890987">.392</td>
+                <td h="7810" x="0.380961634880755">.381</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div nodecaption="Baseline Comparisons">
+          <h5>Baseline Comparisons</h5>
+          <table>
+            <colgroup>
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+            </colgroup>
+            <thead>
+              <tr align="right" RowID="">
+                <td align="left" class="B1">Model</td>
+                <td h="7912" class="B2">NFI<br>Delta1</br></td>
+                <td h="7913" class="B2">RFI<br>rho1</br></td>
+                <td h="7914" class="B2">IFI<br>Delta2</br></td>
+                <td h="7915" class="B2">TLI<br>rho2</br></td>
+                <td h="7916" class="B2">CFI</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Default model</td>
+                <td h="7812" x="0.996175171010451">.996</td>
+                <td h="7813" x="0.992350342020902">.992</td>
+                <td h="7814" x="1.00685180200358">1.007</td>
+                <td h="7815" x="1.01385206523498">1.014</td>
+                <td h="7816" x="1">1.000</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Saturated model</td>
+                <td h="7812" x="1">1.000</td>
+                <td />
+                <td h="7814" x="1">1.000</td>
+                <td />
+                <td h="7816" x="1">1.000</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Independence model</td>
+                <td h="7812" x="0">.000</td>
+                <td h="7813" x="0">.000</td>
+                <td h="7814" x="0">.000</td>
+                <td h="7815" x="0">.000</td>
+                <td h="7816" x="0">.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div nodecaption="Parsimony-Adjusted Measures">
+          <h5>Parsimony-Adjusted Measures</h5>
+          <table>
+            <colgroup>
+              <col />
+              <col />
+              <col />
+              <col />
+            </colgroup>
+            <thead>
+              <tr align="right" RowID="">
+                <td align="left" class="B1">Model</td>
+                <td h="7918" class="B2">PRATIO</td>
+                <td h="7919" class="B2">PNFI</td>
+                <td h="7920" class="B2">PCFI</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Default model</td>
+                <td h="7818" x="0.5">.500</td>
+                <td h="7819" x="0.498087585505226">.498</td>
+                <td h="7820" x="0.5">.500</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Saturated model</td>
+                <td h="7818" x="0">.000</td>
+                <td h="7819" x="0">.000</td>
+                <td h="7820" x="0">.000</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Independence model</td>
+                <td h="7818" x="1">1.000</td>
+                <td h="7819" x="0">.000</td>
+                <td h="7820" x="0">.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div nodecaption="NCP">
+          <h5>NCP</h5>
+          <table>
+            <colgroup>
+              <col />
+              <col />
+              <col />
+              <col />
+            </colgroup>
+            <thead>
+              <tr align="right" RowID="">
+                <td align="left" class="B1">Model</td>
+                <td h="7922" class="B2">NCP</td>
+                <td h="7923" class="B2">LO 90</td>
+                <td h="7924" class="B2">HI 90</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Default model</td>
+                <td h="7822" x="0">.000</td>
+                <td h="7823" x="0">.000</td>
+                <td h="7824" x="3.65929412841797">3.659</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Saturated model</td>
+                <td h="7822" x="0">.000</td>
+                <td h="7823" x="0">.000</td>
+                <td h="7824" x="0">.000</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Independence model</td>
+                <td h="7822" x="276.912784749654">276.913</td>
+                <td h="7823" x="225.529182434082">225.529</td>
+                <td h="7824" x="335.710517883301">335.711</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div nodecaption="FMIN">
+          <h5>FMIN</h5>
+          <table>
+            <colgroup>
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+            </colgroup>
+            <thead>
+              <tr align="right" RowID="">
+                <td align="left" class="B1">Model</td>
+                <td h="7925" class="B2">FMIN</td>
+                <td h="7926" class="B2">F0</td>
+                <td h="7927" class="B2">LO 90</td>
+                <td h="7928" class="B2">HI 90</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Default model</td>
+                <td h="7825" x="0.00512840294134826">.005</td>
+                <td h="7826" x="0">.000</td>
+                <td h="7827" x="0">.000</td>
+                <td h="7828" x="0.017342626201033">.017</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Saturated model</td>
+                <td h="7825" x="0">.000</td>
+                <td h="7826" x="0">.000</td>
+                <td h="7827" x="0">.000</td>
+                <td h="7828" x="0">.000</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Independence model</td>
+                <td h="7825" x="1.34081888506945">1.341</td>
+                <td h="7826" x="1.3123828661121">1.312</td>
+                <td h="7827" x="1.06885868452172">1.069</td>
+                <td h="7828" x="1.59104510845166">1.591</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div nodecaption="RMSEA">
+          <h5>RMSEA</h5>
+          <table>
+            <colgroup>
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+            </colgroup>
+            <thead>
+              <tr align="right" RowID="">
+                <td align="left" class="B1">Model</td>
+                <td h="7929" class="B2">RMSEA</td>
+                <td h="7930" class="B2">LO 90</td>
+                <td h="7931" class="B2">HI 90</td>
+                <td h="7932" class="B2">PCLOSE</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Default model</td>
+                <td h="7829" x="0">.000</td>
+                <td h="7830" x="0">.000</td>
+                <td h="7831" x="0.0760320682366614">.076</td>
+                <td h="7832" x="0.884048847953769">.884</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Independence model</td>
+                <td h="7829" x="0.467686302648849">.468</td>
+                <td h="7830" x="0.422070034575961">.422</td>
+                <td h="7831" x="0.514950662434707">.515</td>
+                <td h="7832" x="9.22444481132878E-07">.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div nodecaption="AIC">
+          <h5>AIC</h5>
+          <table>
+            <colgroup>
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+            </colgroup>
+            <thead>
+              <tr align="right" RowID="">
+                <td align="left" class="B1">Model</td>
+                <td h="7934" class="B2">AIC</td>
+                <td h="7935" class="B2">BCC</td>
+                <td h="7936" class="B2">BIC</td>
+                <td h="7937" class="B2">CAIC</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Default model</td>
+                <td h="7834" x="15.0820930206245">15.082</td>
+                <td h="7835" x="15.4218988458672">15.422</td>
+                <td h="7836" x="38.5781969433286">38.578</td>
+                <td h="7837" x="45.5781969433286">45.578</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Saturated model</td>
+                <td h="7834" x="20">20.000</td>
+                <td h="7835" x="20.4854368932039">20.485</td>
+                <td h="7836" x="53.5658627467201">53.566</td>
+                <td h="7837" x="63.5658627467201">63.566</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Independence model</td>
+                <td h="7834" x="290.912784749654">290.913</td>
+                <td h="7835" x="291.106959506935">291.107</td>
+                <td h="7836" x="304.339129848342">304.339</td>
+                <td h="7837" x="308.339129848342">308.339</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div nodecaption="ECVI">
+          <h5>ECVI</h5>
+          <table>
+            <colgroup>
+              <col />
+              <col />
+              <col />
+              <col />
+              <col />
+            </colgroup>
+            <thead>
+              <tr align="right" RowID="">
+                <td align="left" class="B1">Model</td>
+                <td h="7938" class="B2">ECVI</td>
+                <td h="7939" class="B2">LO 90</td>
+                <td h="7940" class="B2">HI 90</td>
+                <td h="7941" class="B2">MECVI</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Default model</td>
+                <td h="7838" x="0.0714791138418222">.071</td>
+                <td h="7839" x="0.0805687203791469">.081</td>
+                <td h="7840" x="0.0979113465801799">.098</td>
+                <td h="7841" x="0.073089567989892">.073</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Saturated model</td>
+                <td h="7838" x="0.0947867298578199">.095</td>
+                <td h="7839" x="0.0947867298578199">.095</td>
+                <td h="7840" x="0.0947867298578199">.095</td>
+                <td h="7841" x="0.0970873786407767">.097</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Independence model</td>
+                <td h="7838" x="1.37873357701258">1.379</td>
+                <td h="7839" x="1.13520939542219">1.135</td>
+                <td h="7840" x="1.65739581935214">1.657</td>
+                <td h="7841" x="1.37965383652576">1.380</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div nodecaption="HOELTER">
+          <h5>HOELTER</h5>
+          <table>
+            <colgroup>
+              <col />
+              <col />
+              <col />
+            </colgroup>
+            <thead>
+              <tr align="right" RowID="">
+                <td align="left" class="B1">Model</td>
+                <td h="7943" class="B2">HOELTER<br>.05</br></td>
+                <td h="7944" class="B2">HOELTER<br>.01</br></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Default model</td>
+                <td h="7843">1524</td>
+                <td h="7844">2213</td>
+              </tr>
+              <tr align="right" RowID="">
+                <td align="left" class="B3">Independence model</td>
+                <td h="7843">10</td>
+                <td h="7844">13</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div nodecaption="Execution Time" ntype="executiontime">
+        <h5 h="884">Execution time summary</h5>
+        <table class="PLAINTABLE">
+          <colgroup>
+            <col />
+            <col />
+          </colgroup>
+          <tbody>
+            <tr align="right" RowID="">
+              <td align="left">Minimization:</td>
+              <td x="0.00700000000000012">.007</td>
+            </tr>
+            <tr align="right" RowID="">
+              <td align="left">Miscellaneous:</td>
+              <td x="0.0569999999999999">.057</td>
+            </tr>
+            <tr align="right" RowID="">
+              <td align="left">Bootstrap:</td>
+              <td x="0.0659999999999998">.066</td>
+            </tr>
+            <tr align="right" RowID="">
+              <td align="left">Total:</td>
+              <td x="0.13">.130</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <span vlc="variablelabels">
+        <span vlc="groupvariablelabels" groupname="Group number 1">
+          <varlab vname="" vlabel="" />
+        </span>
+      </span>
+    </div>
+  </body>
+</html>
