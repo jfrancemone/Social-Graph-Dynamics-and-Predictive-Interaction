@@ -6,9 +6,9 @@
 
 ### **Project Overview**
 
-This project simulates the dynamics of **Social Balance Theory** to predict how users develop attitudes towards new nodes (people/content) in a network. Across three experimental studies, I modeled triadic closure, which is the principle that drives social recommendation engines (e.g., friend of a friend).
+This project simulates the dynamics of **Social Balance Theory** to predict how users develop attitudes towards new nodes (people/content) in a network. Across three experimental studies, I modeled triadic closure providing support for the principle that drives social recommendation engines (e.g., friend of a friend).
 
-By manipulating the valence of network connections (Positive vs. Negative), I identified the conditions under which **Algorithmic Suggestions** succeed (Assimilation) or backfire (Contrast), validating the predictive framework used in optimizing social graphs.
+By manipulating the valence of network connections (Positive vs. Negative), I identified the conditions under which **Algorithmic Suggestions** succeed (Assimilation) or backfire (Contrast), highlighting how social graph theory functions in a predictive framework.
 
 > **📄 Publication:**
 > Francemone, C. J., & Grizzard, M. (2025). Evidence of balance theory as a predictive framework for character interdependence. *Journal of Communication.*
@@ -38,11 +38,11 @@ Content is not judged in a vacuum.
 ### **Methodology**
 
 * **Design:** Multi-Study Experimental Series (Simulated Social Triads).
-* **Participants:** N ≈ 1,500 across 3 studies.
+* **Participants:** N ≈ 1,000 across 3 studies.
 * **Framework:** **Heider’s Balance Theory** (P-O-X Triads) applied to network structures.
 * **Analysis:**
     * **Factorial ANOVA:** To test main effects of network valence on sentiment.
-    * **Path Analysis:** To measure the magnitude of assimilation and contrast effects.
+    * **Path Analysis:** To measure the magnitude of assimilation and contrast effects via mediation analyses.
 * **Tools:**
     * **SPSS:** Primary statistical modeling.
     * **AMOS:** Mediation and moderation analysis.
