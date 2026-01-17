@@ -1,4 +1,4 @@
-# 🌐 Social Graph Dynamics & Predictive Interaction Modeling
+# 🌐 Social Graph Dynamics & Attitude Formation
 
 [![Publication](https://img.shields.io/badge/Publication-Journal_of_Communication_(2025)-blue)](https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqaf025/8169650)
 [![Method](https://img.shields.io/badge/Method-Experiment_(N%3D725)-green)](https://github.com/jfrancemone/Social-Graph-Dynamics-and-Predictive-Interaction-Modeling)
